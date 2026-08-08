@@ -1,11 +1,13 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
 a {
-    color: white;
+    color: #fff;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #ff0000;
     text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
