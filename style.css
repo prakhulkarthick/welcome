@@ -1,3 +1,11 @@
 body {
-  background-color: black;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
 }
