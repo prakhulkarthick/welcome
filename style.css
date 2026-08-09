@@ -122,12 +122,10 @@ a {
     animation-duration: 7.2s;
 }
 .blend-box {
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  background-image: url('burger.jpg'), url('teddy.png');
-  background-size: cover;
-  background-position: center;
-  
-  background-blend-mode: multiply; 
+  background: none;
+  background-image: none;
+  background-color: transparent;
+  background-position: initial;
+  background-size: auto;
+  background-blend-mode: normal;
 }
