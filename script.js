@@ -1,41 +1,41 @@
-import { createClient } from
-    'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+// import { createClient } from
+//     'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-// Your Supabase project details
-const SUPABASE_URL = 'https://ffjrvdwukljlazasmofo.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_1ZVgl0LiDFOoNsm_vm7paQ_Qdg23VNy';
+// // Your Supabase project details
+// const SUPABASE_URL = 'https://ffjrvdwukljlazasmofo.supabase.co';
+// const SUPABASE_KEY = 'sb_publishable_1ZVgl0LiDFOoNsm_vm7paQ_Qdg23VNy';
 
-const supabase = createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
+// const supabase = createClient(
+//     SUPABASE_URL,
+//     SUPABASE_KEY
+// );
 
-async function getStudents() {
+// async function getStudents() {
 
-    const { data, error } = await supabase
-        .from('users')
-        .select('*');
+//     const { data, error } = await supabase
+//         .from('users')
+//         .select('*');
 
-    if (error) {
-        console.error(error);
-        document.getElementById('users').innerHTML =
-            'Error loading users.';
-        return;
-    }
+//     if (error) {
+//         console.error(error);
+//         document.getElementById('users').innerHTML =
+//             'Error loading users.';
+//         return;
+//     }
 
-    console.log(data);
+//     console.log(data);
 
-    // Display the data
-    const container = document.getElementById('users');
+//     // Display the data
+//     const container = document.getElementById('users');
 
-    data.forEach(user => {
-        const p = document.createElement('p');
+//     data.forEach(user => {
+//         const p = document.createElement('p');
 
-        p.textContent =
-            `${user.id} - ${user.name} - ${user.email}`;
+//         p.textContent =
+//             `${user.id} - ${user.name} - ${user.email}`;
 
-        container.appendChild(p);
-    });
-}
+//         container.appendChild(p);
+//     });
+// }
 
-getStudents();
+// getStudents();
