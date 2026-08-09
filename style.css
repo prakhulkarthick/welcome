@@ -50,7 +50,7 @@ a {
 }
 
 /* Falling images */
-.falling {
+.burger {
     position: fixed;
     top: -100px;
     width: 70px;
